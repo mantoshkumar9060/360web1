@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <center>
+            <h1>
+                <font color="blue">
+                    Welcome to 360digrii
+                </font>
+            </h1>
+        </center>
+        <p align="center">
+            <a href="home.html">Home</a>|&nbsp;&nbsp;
+            <a href="about.html">About</a>| &nbsp;&nbsp;
+            <a href="contact.html">Contact</a>| &nbsp;&nbsp;
+            <a href="branches.html">Branches</a>| &nbsp;&nbsp;
+            <a href="courses.html">Courses</a>| &nbsp;&nbsp;
+            <a href="placed-students.html">Placed Students</a>| &nbsp;&nbsp;
+            <a href="upcoming-companies.html">Upcoming Companies</a>| &nbsp;&nbsp;
+            <a href="#signup">Signup</a>| &nbsp;&nbsp;
+            <a href="login.html">Login</a>| &nbsp;&nbsp;
+
+        </p>
+    </header>
+    <div class="signup-container">
+        <h2>Registration Form</h2>
+
+        <form action="/submit" method="post">
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required><br>
+
+            <label for="studentId">Student ID:</label><br>
+            <input type="text" id="studentId" name="studentId" required><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+
+            <label>Courses:</label>
+            <input type="checkbox" id="java" name="courses[]" value="java">
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="python" name="courses[]" value="python">
+            <label for="python">Python</label><br>
+
+            <label>ClassMode:</label>
+            <input type="checkbox" id="offline" name="classes[]" value="offline">
+            <label for="offline">offline</label>
+            <input type="checkbox" id="online" name="classes[]" value="online">
+            <label for="online">online</label><br>
+            
+
+            <label for="demoDate">Demo Date:</label><br>
+            <input type="date" id="demoDate" name="demoDate"><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="qualification">Qualification:</label><br>
+            <input type="text" id="qualification" name="qualification"><br>
+
+            <label for="resume">Resume:</label><br>
+            <input type="file" id="resume" name="resume"><br>
+
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="4"></textarea><br>
+
+            <label for="linkedinUrl">LinkedIn URL:</label><br>
+            <input type="url" id="linkedinUrl" name="linkedinUrl"><br>
+
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+            <p>You have already account  <a href="/login.html">Login</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
